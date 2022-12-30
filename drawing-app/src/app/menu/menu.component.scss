@@ -8,3 +8,37 @@
     align-items: center;
     color:white;
   }
+
+  button {
+    display: block;
+    padding: 10px;
+    margin:8px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    
+  }
+
+  .menu-item {
+    margin: 8px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      margin-right:8px;
+    }
+
+    input {
+      cursor: pointer;
+    }
+  }

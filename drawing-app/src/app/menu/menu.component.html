@@ -1,7 +1,15 @@
 <div class="menu">
     <button (click)="clearCanvas()">Clear Canvas</button>
-    <label for="color-picker">Color:</label>
-    <input id="color-picker" type="color" (change)="setColor($event.target.value)">
+    <div class="menu-item">
+        <label for="color-picker">Color:</label>
+        <input id="color-picker" type="color" (change)="changeColor($event.target.value)">
+    </div>
+    <div class="menu-item">
+        <label for="line-width-picker">Line Width:</label>
+        <input id="line-width-picker" type="range" min="1" max="10" step="1" (change)="changeLineWidth($event.target.value)">
+    </div>
+    
+    
 </div>
 
 

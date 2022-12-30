@@ -27,7 +27,7 @@ export class MenuComponent implements OnInit {
     this.lineWidthChange.emit(lineWidth);
   }
 
-  setColor(color: string) {
+  changeColor(color: string) {
     this.colorChange.emit(color);
   }
 
