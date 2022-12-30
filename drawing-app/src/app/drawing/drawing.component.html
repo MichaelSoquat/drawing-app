@@ -1,1 +1,8 @@
-<canvas #canvas width="500" height="500"></canvas>
+<main>
+  <h1>Drawing App</h1>
+  <div class="context-row">
+    <app-menu (lineWidthChange)="setLineWidth($event)" (colorChange)="setColor($event)" (remove)="clear()"></app-menu>
+    <canvas #canvas width="500" height="500"></canvas>
+  </div>
+</main>
+
