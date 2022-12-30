@@ -2,7 +2,7 @@
   <h1>Drawing App</h1>
   <div class="context-row">
     <app-menu (lineWidthChange)="setLineWidth($event)" (colorChange)="setColor($event)" (remove)="clear()"
-    (backgroundColorChange)="setBgColor($event)"></app-menu>
+    (backgroundColorChange)="setBgColor($event)" (smiley)="setSmiley($event)"></app-menu>
     <canvas #canvas width="500" height="500"></canvas>
   </div>
 </main>

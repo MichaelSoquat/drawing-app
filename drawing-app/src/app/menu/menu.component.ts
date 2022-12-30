@@ -13,6 +13,7 @@ export class MenuComponent implements OnInit {
   @Output() colorChange = new EventEmitter<string>();
   @Output() remove = new EventEmitter();
   @Output() backgroundColorChange = new EventEmitter<string>();
+  @Output() smiley = new EventEmitter();
 
 
   constructor() { }
@@ -34,6 +35,10 @@ export class MenuComponent implements OnInit {
 
   changeBackgroundColor(color: string) {
     this.backgroundColorChange.emit(color);
+  }
+
+  selectSmiley(smiley: string) {
+    this.smiley.emit(smiley);
   }
 
 

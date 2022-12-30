@@ -12,6 +12,20 @@
         <label for="background-color">Background Color:</label>
         <input id="background-color" type="color" value="#808080" (change)="changeBackgroundColor($event.target.value)">
     </div>
+<div class="menu-item">
+    <label for="smiley-select">Smiley:</label>
+  <select id="smiley-select" (change)="selectSmiley($event.target.value)">
+    <option value="😀">😀</option>
+    <option value="😂">😂</option>
+    <option value="😊">😊</option>
+    <option value="😍">😍</option>
+    <option value="😎">😎</option>
+    <option value="😔">😔</option>
+    <option value="😞">😞</option>
+    <option value="😠">😠</option>
+  </select>
+</div>
+    
     
     
 </div>
