@@ -1,9 +1,14 @@
-canvas {
-    border: 1px solid black;
-  }
+
 
   .context-row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  main {
+    h1 {
+      text-align: center;
+      margin: 48px;
+    }
   }

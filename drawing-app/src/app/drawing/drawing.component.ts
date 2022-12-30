@@ -22,6 +22,8 @@ export class DrawingComponent implements OnInit {
     this.ctx = this.canvas.nativeElement.getContext('2d');
     this.ctx.lineWidth = 3;
     this.ctx.lineCap = 'round';
+    this.ctx.fillStyle = '#808080';
+    this.ctx.fillRect(0, 0, this.canvas.nativeElement.width + 10, this.canvas.nativeElement.height + 10);
 
     this.canvas.nativeElement.addEventListener('mousedown', (event) => {
       this.ctx.beginPath();
@@ -46,6 +48,11 @@ export class DrawingComponent implements OnInit {
 
   setColor(color: string) {
     this.ctx.strokeStyle = color;
+  }
+
+  setBgColor(color: string) {
+    this.ctx.fillStyle = color;
+    this.ctx.fillRect(0, 0, this.canvas.nativeElement.width, this.canvas.nativeElement.height);
   }
 
   clear() {

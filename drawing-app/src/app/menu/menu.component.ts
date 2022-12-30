@@ -12,6 +12,7 @@ export class MenuComponent implements OnInit {
   @Output() lineWidthChange = new EventEmitter<number>();
   @Output() colorChange = new EventEmitter<string>();
   @Output() remove = new EventEmitter();
+  @Output() backgroundColorChange = new EventEmitter<string>();
 
 
   constructor() { }
@@ -30,5 +31,10 @@ export class MenuComponent implements OnInit {
   changeColor(color: string) {
     this.colorChange.emit(color);
   }
+
+  changeBackgroundColor(color: string) {
+    this.backgroundColorChange.emit(color);
+  }
+
 
 }

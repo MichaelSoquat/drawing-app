@@ -6,7 +6,11 @@
     </div>
     <div class="menu-item">
         <label for="line-width-picker">Line Width:</label>
-        <input id="line-width-picker" type="range" min="1" max="10" step="1" (change)="changeLineWidth($event.target.value)">
+        <input id="line-width-picker" type="range" min="1" max="10" step="1" value="1" (change)="changeLineWidth($event.target.value)">
+    </div>
+    <div class="menu-item">
+        <label for="background-color">Background Color:</label>
+        <input id="background-color" type="color" value="#808080" (change)="changeBackgroundColor($event.target.value)">
     </div>
     
     
